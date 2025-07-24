@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas HTML | Gloriana Camacho</title>
+    <link rel="stylesheet" href="../css/styless.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tablas en HTML</h1>
+      <p>por Gloriana Camacho Navarro</p>
+      <a href="../index.html" class="button">Volver al Inicio</a>
+    </header>
+
+    <div class="table-container">
+      <h2>Ejemplo Completo de Tabla</h2>
+
+      <table>
+        <caption>
+          Horario de Clases
+        </caption>
+        <thead>
+          <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>8:00 - 9:00</td>
+            <td>Matemáticas</td>
+            <td>Español</td>
+            <td>Matemáticas</td>
+            <td>Ciencias</td>
+            <td>Historia</td>
+          </tr>
+          <tr>
+            <td>9:00 - 10:00</td>
+            <td>Ciencias</td>
+            <td>Matemáticas</td>
+            <td>Inglés</td>
+            <td>Educación Física</td>
+            <td>Arte</td>
+          </tr>
+          <tr>
+            <td>10:00 - 11:00</td>
+            <td colspan="5" style="text-align: center">RECREO</td>
+          </tr>
+          <tr>
+            <td>11:00 - 12:00</td>
+            <td>Historia</td>
+            <td rowspan="2">Taller</td>
+            <td>Ciencias</td>
+            <td>Matemáticas</td>
+            <td>Música</td>
+          </tr>
+          <tr>
+            <td>12:00 - 1:00</td>
+            <td>Inglés</td>
+            <td>Español</td>
+            <td>Computación</td>
+            <td>Taller</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="6">Total de horas semanales: 25</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <h3>Elementos usados en esta tabla:</h3>
+      <ul>
+        <li>&lt;table&gt; - Contenedor principal</li>
+        <li>&lt;caption&gt; - Título descriptivo</li>
+        <li>&lt;thead&gt; - Cabecera de tabla</li>
+        <li>&lt;tbody&gt; - Cuerpo de tabla</li>
+        <li>&lt;tfoot&gt; - Pie de tabla</li>
+        <li>&lt;tr&gt; - Fila de tabla</li>
+        <li>&lt;th&gt; - Celda de cabecera</li>
+        <li>&lt;td&gt; - Celda de datos</li>
+        <li>colspan - Expandir columnas</li>
+        <li>rowspan - Expandir filas</li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Gloriana Camacho Navarro | Proyecto HTML</p>
+    </footer>
+  </body>
+</html>

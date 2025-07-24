@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listas HTML | Gloriana Camacho</title>
+    <link rel="stylesheet" href="../css/styless.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Listas en HTML</h1>
+      <p>por Gloriana Camacho Navarro</p>
+      <a href="../index.html" class="button">Volver al Inicio</a>
+    </header>
+
+    <div class="list-container">
+      <div class="list-section">
+        <h2>Tipos de Listas</h2>
+
+        <h3>Lista No Ordenada (ul)</h3>
+        <ul>
+          <li>Elemento de lista 1</li>
+          <li>Elemento de lista 2</li>
+          <li>
+            Elemento de lista 3
+            <ul>
+              <li>Subelemento 1</li>
+              <li>Subelemento 2</li>
+            </ul>
+          </li>
+          <li>Elemento de lista 4</li>
+        </ul>
+
+        <h3>Lista Ordenada (ol)</h3>
+        <ol>
+          <li>Primer paso</li>
+          <li>Segundo paso</li>
+          <li>
+            Tercer paso
+            <ol type="a">
+              <li>Subpaso a</li>
+              <li>Subpaso b</li>
+            </ol>
+          </li>
+          <li>Cuarto paso</li>
+        </ol>
+
+        <h3>Lista de Definición (dl)</h3>
+        <dl class="definition-list">
+          <dt>HTML</dt>
+          <dd>Lenguaje de marcado para crear páginas web.</dd>
+
+          <dt>CSS</dt>
+          <dd>Lenguaje para dar estilo a documentos HTML.</dd>
+
+          <dt>JavaScript</dt>
+          <dd>
+            Lenguaje de programación para crear interactividad en páginas web.
+          </dd>
+        </dl>
+      </div>
+
+      <div class="list-section">
+        <h2>Variaciones de Listas</h2>
+
+        <h3>Lista con Íconos Personalizados</h3>
+        <ul class="custom-bullets">
+          <li>Elemento con ícono especial</li>
+          <li>Otro elemento con estilo único</li>
+          <li>Más elementos personalizados</li>
+        </ul>
+
+        <h3>Lista Ordenada con Tipo Romano</h3>
+        <ol type="I">
+          <li>Introducción</li>
+          <li>
+            Desarrollo
+            <ol type="i">
+              <li>Punto uno</li>
+              <li>Punto dos</li>
+            </ol>
+          </li>
+          <li>Conclusión</li>
+        </ol>
+
+        <h3>Lista con Elementos de Bloque</h3>
+        <ul>
+          <li>
+            <h4>Título del elemento</h4>
+            <p>Descripción detallada del elemento de lista.</p>
+            <a href="#">Enlace relacionado</a>
+          </li>
+          <li>
+            <h4>Otro título</h4>
+            <p>Otra descripción con más contenido.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Gloriana Camacho Navarro | Proyecto HTML</p>
+    </footer>
+  </body>
+</html>

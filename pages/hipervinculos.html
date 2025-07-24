@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hipervínculos HTML | Gloriana Camacho</title>
+    <link rel="stylesheet" href="../css/styless.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Hipervínculos en HTML</h1>
+      <p>por Gloriana Camacho Navarro</p>
+      <a href="../index.html" class="button">Volver al Inicio</a>
+    </header>
+
+    <div class="links-container">
+      <h2>Ejemplos de Hipervínculos</h2>
+
+      <section class="link-examples">
+        <h3>1. Enlace básico</h3>
+        <p><a href="https://www.tavuel.com">Visita Tavuel.com</a></p>
+        <pre><code>&lt;a href="https://www.tavuel.com"&gt;Visita Tavuel.com&lt;/a&gt;</code></pre>
+
+        <h3>2. Enlace que abre en nueva pestaña</h3>
+        <p>
+          <a
+            href="https://www.google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Abrir Google en nueva pestaña</a
+          >
+        </p>
+        <pre><code>&lt;a href="https://www.google.com" target="_blank" rel="noopener noreferrer"&gt;Abrir Google en nueva pestaña&lt;/a&gt;</code></pre>
+
+        <h3>3. Enlace a correo electrónico</h3>
+        <p><a href="mailto:glorianacamacho927@gmail.com">Enviar correo</a></p>
+        <pre><code>&lt;a href="mailto:glorianacamacho927@gmail.com"&gt;Enviar correo&lt;/a&gt;</code></pre>
+
+        <h3>4. Enlace para llamadas telefónicas</h3>
+        <p><a href="tel:+50685937545">Llamar al +506 8593 7545</a></p>
+        <pre><code>&lt;a href="tel:+50685937545"&gt;Llamar al +506 8593 7545&lt;/a&gt;</code></pre>
+
+        <h3>5. Enlace a sección de la misma página</h3>
+        <p><a href="#footer">Ir al pie de página</a></p>
+        <pre><code>&lt;a href="#footer"&gt;Ir al pie de página&lt;/a&gt;</code></pre>
+
+        <h3>6. Enlace con atributo title</h3>
+        <p>
+          <a href="https://www.wikipedia.org" title="Enciclopedia en línea"
+            >Wikipedia</a
+          >
+        </p>
+        <pre><code>&lt;a href="https://www.wikipedia.org" title="Enciclopedia en línea"&gt;Wikipedia&lt;/a&gt;</code></pre>
+
+        <h3>7. Enlace de descarga</h3>
+        <p><a href="../docs/ejemplo.pdf" download>Descargar PDF</a></p>
+        <pre><code>&lt;a href="../docs/ejemplo.pdf" download&gt;Descargar PDF&lt;/a&gt;</code></pre>
+
+        <h3>8. Enlace con imagen</h3>
+        <p>
+          <a href="https://www.instagram.com">
+            <img src="../images/instagram.jpeg" alt="Instagram" width="50" />
+          </a>
+        </p>
+        <pre><code>&lt;a href="https://www.instagram.com"&gt;
+  &lt;img src="../images/instagram.jpeg" alt="Instagram" width="50"&gt;
+&lt;/a&gt;</code></pre>
+      </section>
+
+      <section class="link-attributes">
+        <h3>Atributos importantes de los hipervínculos:</h3>
+        <ul>
+          <li><strong>href</strong>: Especifica la URL del enlace</li>
+          <li>
+            <strong>target</strong>: Controla dónde se abre el enlace (_blank,
+            _self, _parent, _top)
+          </li>
+          <li>
+            <strong>rel</strong>: Especifica la relación entre el documento
+            actual y el enlazado
+          </li>
+          <li>
+            <strong>download</strong>: Indica que el enlace debe descargarse
+          </li>
+          <li>
+            <strong>title</strong>: Proporciona información adicional sobre el
+            enlace
+          </li>
+          <li><strong>id</strong>: Permite crear anclas dentro de la página</li>
+        </ul>
+      </section>
+    </div>
+
+    <footer id="footer">
+      <p>&copy; 2025 Gloriana Camacho Navarro | Proyecto HTML</p>
+    </footer>
+  </body>
+</html>
