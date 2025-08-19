@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animaciones en HTML y CSS | Gloriana Camacho</title>
+    <link rel="stylesheet" href="../css/styless.css" />
+    <style>
+      /* ============================
+       1. Rebote
+    ============================ */
+      @keyframes rebote {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-50px);
+        }
+      }
+      .rebote {
+        width: 80px;
+        height: 80px;
+        background: #6a5acd;
+        border-radius: 50%;
+        margin: 20px auto;
+        animation: rebote 1s infinite;
+      }
+
+      /* ============================
+       2. Cambio de color
+    ============================ */
+      @keyframes cambioColor {
+        0% {
+          background: red;
+        }
+        50% {
+          background: blue;
+        }
+        100% {
+          background: red;
+        }
+      }
+      .cambioColor {
+        width: 100px;
+        height: 100px;
+        margin: 20px auto;
+        animation: cambioColor 2s infinite;
+      }
+
+      /* ============================
+       3. Movimiento lateral
+    ============================ */
+      @keyframes moverX {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(200px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      .moverX {
+        width: 80px;
+        height: 80px;
+        background: teal;
+        margin: 20px auto;
+        animation: moverX 3s infinite;
+      }
+
+      /* ============================
+       4. Movimiento vertical
+    ============================ */
+      @keyframes moverY {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(200px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .moverY {
+        width: 80px;
+        height: 80px;
+        background: purple;
+        margin: 20px auto;
+        animation: moverY 3s infinite;
+      }
+
+      /* ============================
+       5. Rotación continua
+    ============================ */
+      @keyframes girar {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .girar {
+        width: 80px;
+        height: 80px;
+        border: 10px solid #ccc;
+        border-top: 10px solid #ff6347;
+        border-radius: 50%;
+        margin: 20px auto;
+        animation: girar 2s linear infinite;
+      }
+
+      /* ============================
+       6. Zoom
+    ============================ */
+      @keyframes zoom {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.5);
+        }
+      }
+      .zoom {
+        width: 100px;
+        height: 100px;
+        background: green;
+        margin: 20px auto;
+        animation: zoom 2s infinite;
+      }
+
+      /* ============================
+       7. Fade in/out
+    ============================ */
+      @keyframes fade {
+        0%,
+        100% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+      .fade {
+        width: 100px;
+        height: 100px;
+        background: pink;
+        margin: 20px auto;
+        animation: fade 2s infinite;
+      }
+
+      /* ============================
+       8. Pulso (heartbeat)
+    ============================ */
+      @keyframes pulso {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+      }
+      .pulso {
+        width: 80px;
+        height: 80px;
+        background: red;
+        border-radius: 50%;
+        margin: 20px auto;
+        animation: pulso 1s infinite;
+      }
+
+      /* ============================
+       9. Parpadeo texto
+    ============================ */
+      @keyframes blink {
+        0%,
+        50%,
+        100% {
+          opacity: 1;
+        }
+        25%,
+        75% {
+          opacity: 0;
+        }
+      }
+      .parpadeo {
+        text-align: center;
+        font-size: 24px;
+        color: red;
+        animation: blink 1s infinite;
+      }
+
+      /* ============================
+       10. Spinner loader
+    ============================ */
+      @keyframes spin {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .loader {
+        width: 60px;
+        height: 60px;
+        border: 6px solid #eee;
+        border-top: 6px solid #3498db;
+        border-radius: 50%;
+        margin: 20px auto;
+        animation: spin 1s linear infinite;
+      }
+
+      /* ============================
+       11. Barrido izquierda-derecha
+    ============================ */
+      @keyframes barrido {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 200px;
+        }
+      }
+      .barrido {
+        height: 20px;
+        background: orange;
+        margin: 20px auto;
+        animation: barrido 2s infinite alternate;
+      }
+
+      /* ============================
+       12. Flip (rotación 3D)
+    ============================ */
+      @keyframes flip {
+        0% {
+          transform: rotateY(0);
+        }
+        100% {
+          transform: rotateY(360deg);
+        }
+      }
+      .flip {
+        width: 100px;
+        height: 100px;
+        background: #00ced1;
+        margin: 20px auto;
+        animation: flip 3s infinite linear;
+        transform-style: preserve-3d;
+      }
+
+      /* ============================
+       13. Skew (inclinación)
+    ============================ */
+      @keyframes skew {
+        0%,
+        100% {
+          transform: skew(0deg, 0deg);
+        }
+        50% {
+          transform: skew(20deg, 10deg);
+        }
+      }
+      .skew {
+        width: 100px;
+        height: 100px;
+        background: #8a2be2;
+        margin: 20px auto;
+        animation: skew 2s infinite;
+      }
+
+      /* ============================
+       14. Bounce infinito
+    ============================ */
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-80px);
+        }
+      }
+      .bounce {
+        width: 80px;
+        height: 80px;
+        background: #ff8c00;
+        margin: 20px auto;
+        border-radius: 50%;
+        animation: bounce 1.5s infinite ease-in-out;
+      }
+
+      /* ============================
+       15. Wave (ola de texto)
+    ============================ */
+      @keyframes wave {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .wave span {
+        display: inline-block;
+        animation: wave 1s infinite;
+      }
+      .wave span:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .wave span:nth-child(2) {
+        animation-delay: 0.1s;
+      }
+      .wave span:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+      .wave span:nth-child(4) {
+        animation-delay: 0.3s;
+      }
+      .wave span:nth-child(5) {
+        animation-delay: 0.4s;
+      }
+
+      /* ============================
+       16. Escribir texto (typewriter)
+    ============================ */
+      @keyframes escribir {
+        from {
+          width: 0;
+        }
+        to {
+          width: 15ch;
+        }
+      }
+      .typewriter {
+        font-family: monospace;
+        font-size: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        width: 15ch;
+        animation: escribir 4s steps(15) infinite alternate;
+        margin: 20px auto;
+        text-align: center;
+      }
+
+      /* ============================
+       17. Sacudida (shake)
+    ============================ */
+      @keyframes shake {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-10px);
+        }
+        75% {
+          transform: translateX(10px);
+        }
+      }
+      .shake {
+        width: 80px;
+        height: 80px;
+        background: #dc143c;
+        margin: 20px auto;
+        animation: shake 0.5s infinite;
+      }
+
+      /* ============================
+       18. Luz que recorre (shimmer)
+    ============================ */
+      @keyframes shimmer {
+        0% {
+          background-position: -200% 0;
+        }
+        100% {
+          background-position: 200% 0;
+        }
+      }
+      .shimmer {
+        width: 200px;
+        height: 40px;
+        background: linear-gradient(90deg, #eee 25%, #ccc 50%, #eee 75%);
+        background-size: 200% 100%;
+        animation: shimmer 2s infinite;
+        margin: 20px auto;
+      }
+
+      /* ============================
+       19. Expansión circular
+    ============================ */
+      @keyframes expand {
+        0% {
+          transform: scale(0);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      .expand {
+        width: 80px;
+        height: 80px;
+        background: #2e8b57;
+        border-radius: 50%;
+        margin: 20px auto;
+        animation: expand 2s infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Animaciones en HTML y CSS</h1>
+      <p>por Gloriana Camacho Navarro</p>
+      <a href="../index.html" class="button">Volver al Inicio</a>
+    </header>
+
+    <main class="form-container">
+      <section class="form-section">
+        <h2>Galería de Animaciones</h2>
+        <div class="rebote"></div>
+        <div class="cambioColor"></div>
+        <div class="moverX"></div>
+        <div class="moverY"></div>
+        <div class="girar"></div>
+        <div class="zoom"></div>
+        <div class="fade"></div>
+        <div class="pulso"></div>
+        <p class="parpadeo">¡Parpadeo!</p>
+        <div class="loader"></div>
+        <div class="barrido"></div>
+        <div class="flip"></div>
+        <div class="skew"></div>
+        <div class="bounce"></div>
+        <div class="wave">
+          <span>H</span><span>O</span><span>L</span><span>A</span><span>!</span>
+        </div>
+        <div class="typewriter">Escribiendo texto...</div>
+        <div class="shake"></div>
+        <div class="shimmer"></div>
+        <div class="expand"></div>
+      </section>
+
+      <!-- Card 2: Elementos usados -->
+      <section class="form-section">
+        <h2>Elementos Usados en Animaciones</h2>
+        <ul>
+          <li><code>@keyframes</code> – Define los pasos de una animación</li>
+          <li><code>animation-name</code> – Nombre de la animación definida</li>
+          <li><code>animation-duration</code> – Duración de la animación</li>
+          <li>
+            <code>animation-timing-function</code> – Velocidad (linear, ease,
+            ease-in, ease-out, ease-in-out, cubic-bezier)
+          </li>
+          <li><code>animation-delay</code> – Tiempo antes de iniciar</li>
+          <li>
+            <code>animation-iteration-count</code> – Repeticiones (número o
+            infinite)
+          </li>
+          <li>
+            <code>animation-direction</code> – Dirección (normal, reverse,
+            alternate, alternate-reverse)
+          </li>
+          <li>
+            <code>animation-fill-mode</code> – Estado final (none, forwards,
+            backwards, both)
+          </li>
+          <li>
+            <code>animation-play-state</code> – Controla ejecución (running,
+            paused)
+          </li>
+          <li><code>transform</code> – Mover, rotar, escalar, inclinar</li>
+          <li><code>opacity</code> – Transparencia</li>
+          <li><code>transition</code> – Cambios suaves entre estados</li>
+          <li><code>transition-property</code> – Propiedad animada</li>
+          <li><code>transition-duration</code> – Duración transición</li>
+          <li>
+            <code>transition-timing-function</code> – Velocidad transición
+          </li>
+          <li><code>transition-delay</code> – Retraso transición</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Gloriana Camacho Navarro | Proyecto HTML</p>
+    </footer>
+  </body>
+</html>
