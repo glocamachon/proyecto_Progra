@@ -50,6 +50,141 @@
           Probar Interacción
         </button>
       </section>
+
+      <section class="form-section">
+        <h2>Manipulación del DOM</h2>
+
+        <!-- 1. textContent -->
+        <p><strong>1.</strong> Uso de <code>textContent</code></p>
+        <div id="demoTextContent" class="dom-demo">Texto original.</div>
+        <button onclick="ejemploTextContent()">Probar textContent</button>
+
+        <!-- 2. innerHTML -->
+        <p><strong>2.</strong> Uso de <code>innerHTML</code></p>
+        <div id="demoInnerHTML" class="dom-demo">
+          <em>Contenido original con etiqueta</em>
+        </div>
+        <button onclick="ejemploInnerHTML()">Probar innerHTML</button>
+
+        <!-- 3. outerHTML -->
+        <p><strong>3.</strong> Uso de <code>outerHTML</code></p>
+        <div id="demoOuterHTML" class="dom-demo">
+          <p>Elemento reemplazable</p>
+        </div>
+        <button onclick="ejemploOuterHTML()">Probar outerHTML</button>
+
+        <!-- 4. innerText -->
+        <p><strong>4.</strong> Uso de <code>innerText</code></p>
+        <div id="demoInnerText" class="dom-demo">
+          <span style="display: none">Oculto</span>
+          <span>Visible</span>
+        </div>
+        <button onclick="ejemploInnerText()">Probar innerText</button>
+
+        <!-- 5. insertAdjacentHTML -->
+        <p><strong>5.</strong> Uso de <code>insertAdjacentHTML()</code></p>
+        <div id="demoInsertAdjacentHTML" class="dom-demo">
+          <p>Elemento base</p>
+        </div>
+        <button onclick="ejemploInsertAdjacentHTML()">
+          Probar insertAdjacentHTML
+        </button>
+
+        <!-- 6. Navegación entre elementos -->
+        <p><strong>6.</strong> Navegación entre elementos</p>
+        <div id="demoNavegacion" class="dom-demo">
+          <p class="item">Hijo 1</p>
+          <p class="item">Hijo 2</p>
+        </div>
+        <button onclick="ejemploNavegacionDOM()">
+          Probar parentElement / children
+        </button>
+
+        <!-- 7. nextElementSibling / previousElementSibling -->
+        <p>
+          <strong>7.</strong> Uso de <code>nextElementSibling</code> /
+          <code>previousElementSibling</code>
+        </p>
+        <div id="demoHermanos" class="dom-demo">
+          <p class="item">Hermano 1</p>
+          <p class="item">Hermano 2</p>
+          <p class="item">Hermano 3</p>
+        </div>
+        <button onclick="ejemploHermanos()">Probar Siblings</button>
+
+        <!-- 8. setAttribute / getAttribute / removeAttribute -->
+        <p>
+          <strong>8.</strong> Uso de <code>setAttribute()</code>,
+          <code>getAttribute()</code>, <code>removeAttribute()</code>
+        </p>
+        <img
+          id="demoAtributos"
+          style="width: 100%"
+          class="dom-demo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/120px-React-icon.svg.png"
+          alt="Logo de React"
+        />
+        <button onclick="ejemploAtributos()">Probar Atributos</button>
+
+        <!-- 9. classList -->
+        <p><strong>9.</strong> Uso de <code>classList</code></p>
+        <div id="demoClassList" class="dom-demo">
+          Elemento con clase dinámica
+        </div>
+        <button onclick="ejemploClassList()">Probar classList</button>
+
+        <!-- 10. style -->
+        <p><strong>10.</strong> Uso de <code>style</code></p>
+        <div id="demoStyle" class="dom-demo">Caja con estilos cambiables</div>
+        <button onclick="ejemploStyle()">Probar style</button>
+
+        <!-- 11. remove / append / prepend / replaceChild -->
+        <p>
+          <strong>11.</strong> Uso de <code>remove()</code>,
+          <code>append()</code>, <code>prepend()</code>,
+          <code>replaceChild()</code>
+        </p>
+        <div id="demoNodos" class="dom-demo">
+          <p>Elemento A</p>
+          <p>Elemento B</p>
+        </div>
+        <button onclick="ejemploModificacionNodos()">Probar Nodos</button>
+
+        <!-- 12. cloneNode -->
+        <p><strong>12.</strong> Uso de <code>cloneNode()</code></p>
+        <div id="demoCloneNode" class="dom-demo">
+          <p class="item">Original</p>
+        </div>
+        <button onclick="ejemploCloneNode()">Probar cloneNode</button>
+
+        <!-- 13. createTextNode -->
+        <p><strong>13.</strong> Uso de <code>createTextNode()</code></p>
+        <div id="demoCreateTextNode" class="dom-demo"></div>
+        <button onclick="ejemploCreateTextNode()">Probar createTextNode</button>
+
+        <!-- 14. querySelectorAll + forEach -->
+        <p>
+          <strong>14.</strong> Uso de <code>querySelectorAll()</code> +
+          <code>forEach()</code>
+        </p>
+        <div id="demoQuerySelectorAll" class="dom-demo">
+          <p class="item">Texto 1</p>
+          <p class="item">Texto 2</p>
+          <p class="item">Texto 3</p>
+        </div>
+        <button onclick="ejemploQuerySelectorAll()">
+          Probar querySelectorAll
+        </button>
+
+        <!-- 15. getBoundingClientRect -->
+        <p><strong>15.</strong> Uso de <code>getBoundingClientRect()</code></p>
+        <div id="demoGetBoundingClientRect" class="dom-demo">
+          Caja para medir
+        </div>
+        <button onclick="ejemploGetBoundingClientRect()">
+          Probar getBoundingClientRect
+        </button>
+      </section>
     </main>
 
     <footer>
